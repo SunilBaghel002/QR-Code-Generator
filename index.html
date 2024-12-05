@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/256/8721/8721150.png?ga=GA1.1.550981026.1725422807&semt=ais_hybrid" type="image/x-icon">
+    <title>QR Code Genertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="spinner"></div>
+    </div>
+    <div class="container">
+        <p>Enter your TEXT or URL</p>
+        <input type="text" placeholder="Text or URL" id="qr-text">
+        <div class="error">Please input some text or URL</div>
+        <div class="spinner" id="spinner"></div>
+        <div id="img-box">
+            <img src="" id="qr-img" alt="">
+        </div>
+        <button class="btn">Get QR Code</button>
+        <button class="reset">Reset</button>
+        <div class="assests">
+            <button class="btn-copy">Copy QR Code</button>
+            <a id="download-link" href="#" download="qrcode.png">Download QR Code</a>
+        </div>
+    </div>
+    <label class="theme-switch"  aria-label="Toggle dark mode">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+        </span>
+    </label>
+    
+    <script src="script.js"></script>
+</body>
+</html>
